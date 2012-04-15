@@ -1,6 +1,6 @@
 # yu2.be
 
-Minimal Youtube[¹](#copyright) URL minifier.
+Minimal Youtube URL minifier.
 
 ## Copyright
 
