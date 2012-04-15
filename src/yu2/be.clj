@@ -13,7 +13,7 @@
        (response/redirect (str "http://youtube.com/watch?v=" id)))
   (GET "/*" {params :params}
        (if (params :v)
-         (str "<html><body onload=\"document.getElementById('url').focus()\"><form><label for=\"url\">Short URL:</label><input id=\"url\" type=\"text\" value=\"http://yu2.be/" (params :v) "\"/></form></body></html>")
+         (str "<html><body onload=\"document.getElementById('url').focus()\"><form><label for=\"url\">Short URL:</label><input id=\"url\" type=\"text\" value=\"http://yu2.be/" (params :v) "\"/></form><div><a href=\"/\">What is this?</a></div></body></html>")
          "Could not determine video from URL"))
   (route/not-found "Page not found"))
 
