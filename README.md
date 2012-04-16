@@ -1,10 +1,10 @@
 # yu2.be
 
-Minimal Youtube URL minifier.
+Minimal YouTube URL minifier.
 
 ## Copyright
 
-Youtube is a registered trademark of Youtube, LLC.  No endorsement or affiliation is implied.
+YouTube is a registered trademark of YouTube, LLC.  No endorsement or affiliation is implied.
 
 ## Requirements
 

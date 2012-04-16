@@ -23,7 +23,7 @@
 
   (deftest test-home
     (is (= 200 (:status (request "/" web-app))))
-    (is (substring? "This is just a Youtube URL shortener"
+    (is (substring? "This is just a YouTube URL shortener"
                    (request-body "/" web-app))))
 
   (deftest test-routes
