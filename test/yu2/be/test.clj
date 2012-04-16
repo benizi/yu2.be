@@ -1,4 +1,4 @@
-(ns yu2.test.be
+(ns yu2.be.test
   (:use [yu2.be])
   (:require [compojure.handler :as handler])
   (:use [clojure.test]))
