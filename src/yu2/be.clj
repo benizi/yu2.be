@@ -14,7 +14,8 @@
 (defn shortener [id & options]
   "An HTML page showing the shortened URL for the given ID"
   (let [host (or (:host (first options)) "yu2.be")
-        short-url (str "http://" host "/" id)]
+        short-url (str "http://" host "/" id)
+        thumb-url (str "http://i3.ytimg.com/vi/" id "/hqdefault.jpg")]
     (html
       [:html
        [:head
@@ -26,6 +27,7 @@
                   :type "text"
                   :size (.length short-url)
                   :value short-url}]]
+        [:img {:src thumb-url}]
         [:div
          [:a {:href "/"} "What is this?"]]]])))
 
