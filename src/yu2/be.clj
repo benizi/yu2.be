@@ -36,8 +36,10 @@
        (if (params :v)
          :next
          (response/file-response "index.html" {:root "public"})))
-  (GET ["/:id" :id youtube-id] [id] (vid id))
-  (GET ["/:short/:id" :short #"[ev]" :id youtube-id] [_ id] (shortener id))
+  (GET ["/:id" :id youtube-id] [id]
+       (vid id))
+  (GET ["/:short/:id" :short #"[ev]" :id youtube-id] [_ id]
+       (shortener id))
   (GET "/*" {params :params
              {host "host"} :headers}
        (if (params :v)
