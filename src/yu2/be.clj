@@ -26,10 +26,10 @@
          [:input {:id "url"
                   :type "text"
                   :size (.length short-url)
-                  :value short-url}]]
-        [:img {:src thumb-url}]
-        [:div
-         [:a {:href "/"} "What is this?"]]]])))
+                  :value short-url}]
+         [:div
+          [:a {:href "/"} "What is this page?"]]]
+        [:img {:src thumb-url}]]])))
 
 (defroutes yu2be
   (GET "/" {params :params}
